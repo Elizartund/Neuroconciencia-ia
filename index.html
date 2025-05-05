@@ -1,160 +1,160 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Componentes Visuales</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Neuroconciencia IA</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      background-color: #f9f9f9;
-    }
-
-    /* Tarjeta Informativa */
-    .card {
-      border: 1px solid #e0e0e0;
-      padding: 16px;
-      border-radius: 8px;
-      max-width: 400px;
-      background-color: #fff;
-      margin-bottom: 40px;
-    }
-
-    .card img {
-      width: 40px;
-      height: 40px;
-    }
-
-    .card h3 {
-      margin: 12px 0 8px;
-    }
-
-    .card p {
-      color: #555;
-    }
-
-    .card a {
-      display: inline-block;
-      margin-top: 12px;
-      color: white;
-      background-color: #007bff;
-      padding: 8px 16px;
-      border-radius: 4px;
-      text-decoration: none;
-    }
-
-    /* Línea de Tiempo */
-    .timeline {
-      position: relative;
-      padding-left: 40px;
-      border-left: 2px solid #ccc;
-      margin-bottom: 40px;
-    }
-
-    .timeline-item {
-      position: relative;
-      margin-bottom: 20px;
-    }
-
-    .timeline-item::before {
-      content: '';
-      width: 16px;
-      height: 16px;
-      background: #007bff;
-      border-radius: 50%;
-      position: absolute;
-      left: -9px;
-      top: 3px;
-    }
-
-    .timeline-item h4 {
       margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #141e30, #243b55);
+      color: white;
     }
 
-    .timeline-item p {
-      margin: 4px 0;
-    }
-
-    /* Tarjetas de Servicios */
-    .service-container {
+    header {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px 40px;
       display: flex;
-      gap: 16px;
-      justify-content: center;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
     }
 
-    .service-card {
-      flex: 1;
-      padding: 16px;
-      border: 1px solid #ddd;
-      border-radius: 8px;
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo span {
+      font-size: 28px;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00f2fe;
+    }
+
+    .hero {
       text-align: center;
-      background-color: #fff;
+      padding: 80px 20px 40px;
     }
 
-    .service-icon {
-      width: 60px;
-      height: 60px;
-      margin: 0 auto 12px;
-      background: #007bff;
-      border-radius: 50%;
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
     }
 
-    @media (max-width: 768px) {
-      .service-container {
-        flex-direction: column;
-        align-items: center;
-      }
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
 
-      .service-card {
-        max-width: 300px;
-      }
+    .buttons {
+      margin-bottom: 60px;
+    }
+
+    .buttons a {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 25px;
+      border-radius: 25px;
+      font-weight: bold;
+      text-decoration: none;
+      color: white;
+      transition: background 0.3s;
+    }
+
+    .btn-explorar {
+      background-color: #a334f5;
+    }
+
+    .btn-explorar:hover {
+      background-color: #8624cc;
+    }
+
+    .btn-demo {
+      background-color: #6f87d8;
+    }
+
+    .btn-demo:hover {
+      background-color: #4c66b3;
+    }
+
+    .info-section {
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .info-section h2 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .info-section p {
+      font-size: 18px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    footer {
+      background-color: rgba(0, 0, 0, 0.7);
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #aaa;
     }
   </style>
 </head>
 <body>
 
-  <!-- Tarjeta Informativa -->
-  <div class="card">
-    <img src="icono.png" alt="Icono">
-    <h3>Título de la tarjeta</h3>
-    <p>Descripción breve del contenido que puede ir aquí.</p>
-    <a href="#">Ver más</a>
-  </div>
+  <header>
+    <div class="logo">
+      <span>🧠</span>
+      Neuroconciencia-IA
+    </div>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">¿Qué es?</a>
+      <a href="#">Artículos</a>
+      <a href="#">Demostración</a>
+      <a href="#">Contacto</a>
+    </nav>
+  </header>
 
-  <!-- Línea de Tiempo -->
-  <div class="timeline">
-    <div class="timeline-item">
-      <h4>Paso 1</h4>
-      <p>Descripción del paso uno en el proceso.</p>
+  <section class="hero">
+    <h1>Neuroconciencia IA</h1>
+    <p>Explorando la intersección entre neurociencia, conciencia e inteligencia artificial.</p>
+    <div class="buttons">
+      <a href="#" class="btn-explorar">Explorar Artículos</a>
+      <a href="#" class="btn-demo">Ver Demostración</a>
     </div>
-    <div class="timeline-item">
-      <h4>Paso 2</h4>
-      <p>Descripción del paso dos en el proceso.</p>
-    </div>
-    <div class="timeline-item">
-      <h4>Paso 3</h4>
-      <p>Descripción del paso tres en el proceso.</p>
-    </div>
-  </div>
+  </section>
 
-  <!-- Tarjetas de Servicios -->
-  <div class="service-container">
-    <div class="service-card">
-      <div class="service-icon"></div>
-      <h4>Servicio 1</h4>
-      <p>Descripción breve del servicio o característica.</p>
-    </div>
-    <div class="service-card">
-      <div class="service-icon"></div>
-      <h4>Servicio 2</h4>
-      <p>Otra descripción del segundo servicio destacado.</p>
-    </div>
-    <div class="service-card">
-      <div class="service-icon"></div>
-      <h4>Servicio 3</h4>
-      <p>Texto explicativo que acompaña al tercer ítem.</p>
-    </div>
-  </div>
+  <section class="info-section">
+    <h2>¿Qué es Neuroconciencia IA?</h2>
+    <p>Un modelo pionero que fusiona neurociencia, inteligencia artificial y frecuencias cuánticas para optimizar tu estado mental en tiempo real.</p>
+  </section>
+
+  <footer>
+    © 2025 Neuroconciencia IA. Todos los derechos reservados.
+  </footer>
 
 </body>
 </html>
+
