@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Neuroconciencia IA</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <div class="hero">
+    <h1>Neuroconciencia IA</h1>
+    <p>Conectando la inteligencia artificial con el poder de tu mente</p>
+    <a href="#conocenos" class="btn">Conócenos</a>
+  </div>
+
+  <section id="conocenos">
+    <h2>¿Quiénes somos?</h2>
+    <p>Somos pioneros en integrar neurociencia e inteligencia artificial para crear soluciones que potencian el conocimiento humano.</p>
+  </section>
+
+  <footer>
+    © 2025 Neuroconciencia IA | Síguenos en <a href="#">Instagram</a> | <a href="#">LinkedIn</a>
+  </footer>
+</body>
+</html>
