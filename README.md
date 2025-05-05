@@ -1,3 +1,5 @@
 # Neuroconciencia-ia
-Es un modelo pionero que fusiona neurociencia, inteligencia artificial y frecuencias cuánticas para una sola misión. Optimizar el estado mental de cada ser humano en tiempo real.
+Explorando la intersección entre neurociencia, conciencia e inteligencia artificial.
 
+# ¿Qué es la Neurociencia?
+La neurociencia es el estudio científico del sistema nervioso, que explora cómo el cerebro y el resto del sistema nervioso funcionan y afectan el comportamiento, las emociones y la cognición. En Neuroconciencia-IA, exploramos la fascinante conexión entre la neurociencia y la inteligencia artificial.
