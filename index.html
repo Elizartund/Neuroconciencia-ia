@@ -1,65 +1,160 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neuroconciencia IA</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Arial', sans-serif;
-            background: linear-gradient(120deg, #4facfe, #00f2fe);
-            color: white;
-            text-align: center;
-            padding: 0;
-        }
-        header {
-            background-color: rgba(0, 0, 0, 0.5);
-            padding: 20px;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 3em;
-        }
-        section {
-            padding: 40px;
-        }
-        .button {
-            display: inline-block;
-            background-color: #ffffff;
-            color: #4facfe;
-            padding: 10px 20px;
-            margin: 10px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-        }
-        .button:hover {
-            background-color: #e0e0e0;
-        }
-        footer {
-            background-color: rgba(0, 0, 0, 0.5);
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            font-size: 0.8em;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Componentes Visuales</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f9f9f9;
+    }
+
+    /* Tarjeta Informativa */
+    .card {
+      border: 1px solid #e0e0e0;
+      padding: 16px;
+      border-radius: 8px;
+      max-width: 400px;
+      background-color: #fff;
+      margin-bottom: 40px;
+    }
+
+    .card img {
+      width: 40px;
+      height: 40px;
+    }
+
+    .card h3 {
+      margin: 12px 0 8px;
+    }
+
+    .card p {
+      color: #555;
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 12px;
+      color: white;
+      background-color: #007bff;
+      padding: 8px 16px;
+      border-radius: 4px;
+      text-decoration: none;
+    }
+
+    /* Línea de Tiempo */
+    .timeline {
+      position: relative;
+      padding-left: 40px;
+      border-left: 2px solid #ccc;
+      margin-bottom: 40px;
+    }
+
+    .timeline-item {
+      position: relative;
+      margin-bottom: 20px;
+    }
+
+    .timeline-item::before {
+      content: '';
+      width: 16px;
+      height: 16px;
+      background: #007bff;
+      border-radius: 50%;
+      position: absolute;
+      left: -9px;
+      top: 3px;
+    }
+
+    .timeline-item h4 {
+      margin: 0;
+    }
+
+    .timeline-item p {
+      margin: 4px 0;
+    }
+
+    /* Tarjetas de Servicios */
+    .service-container {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+    }
+
+    .service-card {
+      flex: 1;
+      padding: 16px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      text-align: center;
+      background-color: #fff;
+    }
+
+    .service-icon {
+      width: 60px;
+      height: 60px;
+      margin: 0 auto 12px;
+      background: #007bff;
+      border-radius: 50%;
+    }
+
+    @media (max-width: 768px) {
+      .service-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .service-card {
+        max-width: 300px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Neuroconciencia IA</h1>
-        <p>Optimiza tu estado mental en tiempo real</p>
-    </header>
-    <section>
-        <h2>¿Qué es Neuroconciencia IA?</h2>
-        <p>Un modelo pionero que fusiona neurociencia, inteligencia artificial y frecuencias cuánticas.</p>
-        <a href="#learn-more" class="button">Aprende Más</a>
-        <a href="https://github.com/Elizartund/Neuroconciencia-ia" class="button">Visita el Repositorio</a>
-    </section>
-    <footer>
-        <p>© 2025 Neuroconciencia IA. Todos los derechos reservados.</p>
-    </footer>
+
+  <!-- Tarjeta Informativa -->
+  <div class="card">
+    <img src="icono.png" alt="Icono">
+    <h3>Título de la tarjeta</h3>
+    <p>Descripción breve del contenido que puede ir aquí.</p>
+    <a href="#">Ver más</a>
+  </div>
+
+  <!-- Línea de Tiempo -->
+  <div class="timeline">
+    <div class="timeline-item">
+      <h4>Paso 1</h4>
+      <p>Descripción del paso uno en el proceso.</p>
+    </div>
+    <div class="timeline-item">
+      <h4>Paso 2</h4>
+      <p>Descripción del paso dos en el proceso.</p>
+    </div>
+    <div class="timeline-item">
+      <h4>Paso 3</h4>
+      <p>Descripción del paso tres en el proceso.</p>
+    </div>
+  </div>
+
+  <!-- Tarjetas de Servicios -->
+  <div class="service-container">
+    <div class="service-card">
+      <div class="service-icon"></div>
+      <h4>Servicio 1</h4>
+      <p>Descripción breve del servicio o característica.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon"></div>
+      <h4>Servicio 2</h4>
+      <p>Otra descripción del segundo servicio destacado.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon"></div>
+      <h4>Servicio 3</h4>
+      <p>Texto explicativo que acompaña al tercer ítem.</p>
+    </div>
+  </div>
+
 </body>
 </html>
